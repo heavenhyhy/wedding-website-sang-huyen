@@ -161,22 +161,24 @@ $(document).ready(function () {
         share_bar[i].style.display = 'inline-block';
     }
 
-    /********************** Embed youtube video *********************/
-    $('.player').YTPlayer();
-
-
     /********************** Toggle Map Content **********************/
     $('#btn-show-map-1').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+        var element = document.getElementById("map-nha-trai");
+
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
     });
     $('#btn-show-map-2').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
-    });
-    $('#btn-show-content').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+        var element = document.getElementById("map-nha-gai");
+
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
     });
 
     /********************** RSVP **********************/
