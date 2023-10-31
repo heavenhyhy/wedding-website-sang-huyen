@@ -55,6 +55,9 @@ ul li {
 }
 section .header {
   padding-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: inherit;
 }
 .section-padding {
   padding: $section-padding;
@@ -556,10 +559,22 @@ Features-stack
   }
 
   .time {
-    font-size: 13px;
+    font-size: 23px;
     font-style: italic;
-    text-transform: lowercase;
-    color: $txt-primary;
+    color: rgb(14 14 14);
+    font-weight: 900;
+  }
+  .datetime{
+    color: #e8ca6f;
+    font-weight: bold;
+    font-size: xxx-large;
+    font-family: "Open Sans";
+    margin: 30px 0 0;
+  }
+  .datetime-al{
+    color: #640d0d;
+    font-weight: 600;
+    font-family: emoji;
   }
 }
 
@@ -889,4 +904,18 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+.calendar{
+    width: 100%;
+    text-align: center;
+  img{
+    width: 350px;
+  }
+}
+.title-event strong{
+  font-size: 28px;
+  color: #e8ca6f;
+}
+.events.wp3{
+  text-align: center;
 }

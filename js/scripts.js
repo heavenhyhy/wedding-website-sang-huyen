@@ -186,7 +186,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Chờ chút nhé!</strong> Thông tin tham dự của bạn đang được lưu lại.'));
 
         $.post('https://script.google.com/macros/s/AKfycbxo6UOQY12Vz5bRqduBbMTx42cFvdHMG6GtWew_EGXrPjEC4FGTbQmJfnr-eFbtqiHJ/exec', data)
             .done(function (data) {
@@ -201,7 +201,7 @@ $(document).ready(function () {
             })
             .fail(function (data) {
                 console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Lỗi mất rồi, bạn thử lại nhé! '));
             });
     });
 
