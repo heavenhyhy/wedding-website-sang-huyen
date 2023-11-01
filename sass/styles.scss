@@ -919,3 +919,14 @@ body.modal-open {
 .events.wp3{
   text-align: center;
 }
+
+// anh-cuoi
+.anh-cuoi {
+  padding-top: 11px;
+}
+
+@media only screen and (max-width: 1026px) {
+  .anh-cuoi {
+      padding-top: 0;
+  }
+}
