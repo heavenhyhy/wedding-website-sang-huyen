@@ -932,8 +932,17 @@ body.modal-open {
   #dc-modal .modal-dialog {
     max-width: none !important;
   }
+  #eng-pics .img-wrap {
+    border-radius: 0;
+    padding-bottom: 5px;
+  }
 }
 
+@media only screen and (max-width: 992px) {
+  .calendar img {
+    width: 100%;
+  }
+}
 /* ==========================================================================
 FAB
 ========================================================================== */
