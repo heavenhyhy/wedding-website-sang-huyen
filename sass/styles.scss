@@ -909,7 +909,7 @@ body.modal-open {
     width: 100%;
     text-align: center;
   img{
-    width: 350px;
+    width: 500px;
   }
 }
 .title-event strong{
@@ -976,7 +976,7 @@ html, body {
   z-index: 2;
   left: 50%;
   margin-left: 0;
-  bottom: 0;
+  bottom: -8px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
